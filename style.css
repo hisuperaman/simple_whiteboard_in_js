@@ -1,18 +1,143 @@
-html, body, .container{
+html,
+body,
+.container {
     padding: 0;
     margin: 0;
     overflow: hidden;
 }
 
-#myCanvas{
-    border: 2px solid black;
-}
+#myCanvas {}
 
-#myCanvas:hover{
+#myCanvas:hover {
     cursor: none;
 }
 
-.container{
+.container {
+    display: flex;
+    /* justify-content: center; */
+    width: 100vw;
+    height: 100vh;
+}
+
+#controlBar {
+    padding: 4px;
+
+    border-right: 2px solid blue;
+
+    width: 15%;
+
+    transition: all;
+    transition-duration: 100ms;
+}
+
+.color-panel, .shape-panel {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 2px;
+}
+
+.color {
+    border-radius: 100%;
+}
+
+.color, .shape{
+    width: 7vmin;
+    height: 7vmin;
+    margin: 2px;
+
+    transition: all;
+    transition-duration: 100ms;
+}
+
+.color:hover, .shape:hover{
+    cursor: pointer;
+
+    filter: brightness(90%);
+}
+
+.panel-heading{
+    border-bottom: 2px solid black;
+}
+
+#red {
+    background-color: red;
+}
+
+#green {
+    background-color: green;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#orange {
+    background-color: orange;
+}
+
+#black {
+    background-color: black;
+}
+
+#violet {
+    background-color: violet;
+}
+
+#purple {
+    background-color: purple;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+.selectedColor, .selectedShape {
+    border: 4px solid black;
+}
+
+#canvas-container{
+    width: 100%;
+}
+
+
+.shape{
+    background-color: rgb(39, 20, 248);
+}
+
+#circle{
+    border-radius: 100%;
+}
+
+.whiteColor{
+    border: 4px solid rgb(88, 88, 88);
+}
+
+
+#displayControlBarDiv{
+    background-color: blue;
+    height: 100%;
+    color: white;
+
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 870px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #controlBar{
+        width: 100%;
+
+        border-bottom: 2px solid black;
+    }
+
+    #toggleButton{
+        transform: rotate(90deg);
+    }
 }
