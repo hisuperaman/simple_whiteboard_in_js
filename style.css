@@ -120,7 +120,6 @@ body,
 
 #displayControlBarDiv {
     background-color: blue;
-    height: 100%;
     color: white;
 
     display: flex;
@@ -150,6 +149,10 @@ body {
         width: 100%;
 
         border-bottom: 2px solid black;
+    }
+
+    #canvas-container{
+        height: 100%;
     }
 
     #toggleButton {

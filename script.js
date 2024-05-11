@@ -65,6 +65,7 @@ function toggleControlBar() {
         controlBar.style.display = 'none';
     }
 
+    
     const rect = canvasContainer.getBoundingClientRect();
     canvas.width = rect.width;
     canvas.height = rect.height;
