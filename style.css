@@ -30,7 +30,8 @@ body,
     transition-duration: 100ms;
 }
 
-.color-panel, .shape-panel {
+.color-panel,
+.shape-panel {
     display: flex;
     flex-wrap: wrap;
 
@@ -41,7 +42,8 @@ body,
     border-radius: 100%;
 }
 
-.color, .shape{
+.color,
+.shape {
     width: 7vmin;
     height: 7vmin;
     margin: 2px;
@@ -50,13 +52,14 @@ body,
     transition-duration: 100ms;
 }
 
-.color:hover, .shape:hover{
+.color:hover,
+.shape:hover {
     cursor: pointer;
 
     filter: brightness(90%);
 }
 
-.panel-heading{
+.panel-heading {
     border-bottom: 2px solid black;
 }
 
@@ -92,29 +95,30 @@ body,
     background-color: yellow;
 }
 
-.selectedColor, .selectedShape {
+.selectedColor,
+.selectedShape {
     border: 4px solid black;
 }
 
-#canvas-container{
+#canvas-container {
     width: 100%;
 }
 
 
-.shape{
+.shape {
     background-color: rgb(39, 20, 248);
 }
 
-#circle{
+#circle {
     border-radius: 100%;
 }
 
-.whiteColor{
+.whiteColor {
     border: 4px solid rgb(88, 88, 88);
 }
 
 
-#displayControlBarDiv{
+#displayControlBarDiv {
     background-color: blue;
     height: 100%;
     color: white;
@@ -125,19 +129,30 @@ body,
 }
 
 
+.h-fill {
+    min-height: -webkit-fill-available;
+    height: 100%;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+
 @media screen and (max-width: 870px) {
-    .container{
+    .container {
         display: flex;
         flex-direction: column;
     }
 
-    #controlBar{
+    #controlBar {
         width: 100%;
 
         border-bottom: 2px solid black;
     }
 
-    #toggleButton{
+    #toggleButton {
         transform: rotate(90deg);
     }
 }
